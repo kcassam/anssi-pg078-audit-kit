@@ -1,0 +1,52 @@
+<!--
+  Modèle Confluence (HTML compatible ADF) pour le tableau de suivi ANSSI-PG-078.
+
+  Usage : coller ce HTML dans une page Confluence (édition via API/MCP en contentFormat "html",
+  ou via l'éditeur après conversion). Les statuts utilisent les "pastilles" Confluence :
+    <span data-type="status" data-color="green|yellow|red|blue|neutral">libellé</span>
+      green = conforme · yellow = partiel · red = non conforme · blue = en cours
+      neutral = N/A  OU  à évaluer (le libellé fait la différence)
+
+  Format d'une cellule : pastille + commentaire court. Ex. :
+    <td><p><span data-type="status" data-color="red">non conforme</span> MD5 sans sel (cf. fichier:ligne)</p></td>
+
+  Ci-dessous : l'en-tête + 2 lignes d'exemple (R1, R28) à dupliquer pour les 43 recommandations.
+-->
+<table data-width="1800">
+  <thead>
+    <tr>
+      <th><p>R#</p></th><th><p>Recommandation</p></th><th><p>Catégorie</p></th>
+      <th><p>Produit A</p></th><th><p>Produit B</p></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><strong>R1</strong></p></td>
+      <td><p>Privilégier l'authentification multifacteur</p></td>
+      <td><p><em>MFA</em></p></td>
+      <td><p><span data-type="status" data-color="neutral">à évaluer</span></p></td>
+      <td><p><span data-type="status" data-color="neutral">à évaluer</span></p></td>
+    </tr>
+    <tr>
+      <td><p><strong>R28</strong></p></td>
+      <td><p>Utiliser un sel aléatoire long (≥ 128 bits, par compte)</p></td>
+      <td><p><em>Stockage</em></p></td>
+      <td><p><span data-type="status" data-color="green">conforme</span> sel 128 bits/compte (commentaire)</p></td>
+      <td><p><span data-type="status" data-color="red">non conforme</span> pas de sel (commentaire)</p></td>
+    </tr>
+    <!-- … dupliquer pour R2..R42 + R29- (voir referentiel/anssi-pg078-grille.md pour les intitulés/catégories) … -->
+  </tbody>
+</table>
+
+<!-- Bloc légende (panneau "note") à placer au-dessus du tableau :
+<div data-type="panel-note">
+  <p><strong>Légende</strong> :
+    <span data-type="status" data-color="green">conforme</span>
+    <span data-type="status" data-color="yellow">partiel</span>
+    <span data-type="status" data-color="red">non conforme</span>
+    <span data-type="status" data-color="blue">en cours</span>
+    <span data-type="status" data-color="neutral">N/A</span>
+    <span data-type="status" data-color="neutral">à évaluer</span>
+  </p>
+</div>
+-->
