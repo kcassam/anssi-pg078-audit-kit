@@ -2,6 +2,8 @@
 
 **🇫🇷 Français** · [🇬🇧 English](README.en.md)
 
+[![Markdown lint](https://github.com/kcassam/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/kcassam/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml) ![Code: MIT](https://img.shields.io/badge/code-MIT-blue) ![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+
 Kit **réutilisable** pour auditer une application contre les recommandations ANSSI **PG-078**
 (« Recommandations relatives à l'authentification multifacteur et aux mots de passe », v2.0, oct. 2021),
 **recommandation par recommandation (R1 → R42 + R29-)**, par **lecture du code source**, puis pour

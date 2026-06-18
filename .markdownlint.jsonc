@@ -1,0 +1,8 @@
+{
+  // Règles markdownlint pour le kit — pragmatiques pour de la doc à tableaux longs.
+  "default": true,
+  "MD013": false, // pas de limite de longueur de ligne (grandes tables)
+  "MD033": false, // HTML inline autorisé (drapeaux, badges)
+  "MD036": false, // ligne en gras (sélecteur de langue) tolérée
+  "MD041": false  // la 1re ligne n'est pas forcément un titre (frontmatter, badges)
+}
