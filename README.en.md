@@ -2,7 +2,7 @@
 
 [🇫🇷 Français](README.md) · **🇬🇧 English**
 
-[![Markdown lint](https://github.com/kcassam/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/kcassam/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml) ![Code: MIT](https://img.shields.io/badge/code-MIT-blue) ![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+[![Markdown lint](https://github.com/cegape/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/cegape/anssi-pg078-audit-kit/actions/workflows/markdown-lint.yml) ![Code: MIT](https://img.shields.io/badge/code-MIT-blue) ![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
 A **reusable kit** to audit an application against the French ANSSI **PG-078** guidelines
 (*"Recommendations for multi-factor authentication and passwords"*, v2.0, Oct. 2021),
