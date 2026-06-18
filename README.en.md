@@ -78,6 +78,11 @@ This grid is an **audit aid**, not an official conformity statement. Final scori
 of the CISO / auditor. The "recommendation → technical cue" mapping reflects an operational reading of
 the guide.
 
+## Contributing
+
+Contributions welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md). In short: **generic content only** —
+never real audit data, secrets, or internal names.
+
 ## License
 
 Code: **MIT**. Documentation: **CC BY 4.0**. © 2026 Karim Cassam Chenaï - Cegape. See `LICENSE`.

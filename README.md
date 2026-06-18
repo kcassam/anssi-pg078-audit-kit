@@ -77,6 +77,11 @@ Cette grille est une **aide à l'audit**, pas un avis de conformité officiel. L
 relève du RSSI / de l'auditeur. La correspondance « reco → indice technique » reflète une
 interprétation opérationnelle du guide.
 
+## Contribuer
+
+Contributions bienvenues — voir [`CONTRIBUTING.md`](CONTRIBUTING.md). En bref : **que du générique**,
+jamais de données d'audit réelles, de secrets ni de noms internes.
+
 ## Licence
 
 Code : **MIT**. Documentation : **CC BY 4.0**. © 2026 Karim Cassam Chenaï - Cegape. Voir `LICENSE`.
