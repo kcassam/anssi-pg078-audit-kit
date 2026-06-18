@@ -11,6 +11,7 @@ seule — **ne modifie aucun fichier**). Évalue la conformité du produit **{{P
 par recommandation.
 
 ## Méthode
+
 1. **Localise** tout le code d'authentification : login, gestion des comptes/rôles, **hashage des mots
    de passe**, sessions/JWT, reset de MDP, anti-bruteforce, politique de MDP, MFA/OTP, config TLS/cookies,
    journalisation. Sers-toi de grep/glob puis lis les fichiers clés.
@@ -18,12 +19,15 @@ par recommandation.
    réellement vu dans le code/config. Cite la preuve `fichier:ligne`. N'invente rien.
 
 ## Statuts
+
 `conforme` / `partiel` / `non conforme` / `en cours` / `N/A` / `à évaluer`.
+
 - `à évaluer` = indéterminable ici (organisationnel, infra/reverse-proxy, ou délégué à un IdP/SSO/LDAP
   externe non visible) — sois honnête.
 - Règle « ne pas … » (R8, R22, R24) : absence du comportement interdit = `conforme`.
 
 ## Recommandations à évaluer (R1 → R42 ET R29-) — [quoi chercher]
+
 - R1 [MFA] 2ᵉ facteur (TOTP/OTP/WebAuthn) ou IdP imposant MFA ; mono-facteur = non conforme.
 - R2 [Auth fort] facteurs forts vs simple MDP.
 - R3 [Analyse de risque] organisationnel → à évaluer.
@@ -65,15 +69,19 @@ par recommandation.
 ## Format de sortie (exact)
 
 ### Architecture d'authentification
+
 <6-12 lignes : framework, où vit l'auth, algo de hashage RÉEL + paramètres, MFA, session/JWT (secret en env ou en dur ? expiration ? stockage côté client ?), anti-bruteforce, politique de MDP (serveur vs client), reset, TLS/cookies, IdP éventuel.>
 
 ### Verdicts
+
 ```json
 {"R1":{"statut":"…","preuve":"fichier:ligne","commentaire":"…"}, "…": {…}, "R29-":{…}, "…": {…}, "R42":{…}}
 ```
+
 (inclure les **43 clés** R1..R42 + R29- ; `commentaire` ≤ 160 caractères, factuel ; `preuve` = `fichier:ligne` ou `—`)
 
 ### Points saillants
+
 - 4 à 10 forces/risques majeurs, chacun avec `fichier:ligne`. Signale tout **secret/clé committé en clair**.
 
 CONTRAINTE : lecture seule, ne modifie aucun fichier.

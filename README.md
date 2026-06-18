@@ -47,11 +47,13 @@ la preuve `fichier:ligne`.
 ## Utilisation
 
 ### Avec Claude Code
+
 1. Copier `.claude/commands/audit-anssi.md` dans votre projet (`.claude/commands/`) ou dans `~/.claude/commands/`.
 2. Lancer `/audit-anssi <chemin-ou-nom-du-dépôt>`.
 3. Relire la sortie, reporter dans le tableau de suivi.
 
 ### Avec n'importe quel LLM / à la main
+
 Fournir `prompts/audit-agent.md` (en remplaçant les placeholders `{{PRODUIT}}` / `{{CHEMIN}}`), en
 s'appuyant sur `referentiel/anssi-pg078-grille.md` et `prompts/hints-par-stack.md`.
 

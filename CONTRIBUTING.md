@@ -6,6 +6,7 @@ conformité ANSSI-PG-078 (authentification & mots de passe). Toute amélioration
 ## ⚠️ Règle d'or — à lire avant toute contribution
 
 **Ne jamais inclure de données confidentielles.** Aucune contribution ne doit contenir :
+
 - un **résultat d'audit réel**, une faille concrète d'un système identifiable ;
 - un **secret**, mot de passe, clé, jeton ;
 - une référence `fichier:ligne` pointant un dépôt réel privé ;

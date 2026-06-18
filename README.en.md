@@ -48,11 +48,13 @@ describes potentially **exploitable** weaknesses. **Never publish** audit report
 ## Usage
 
 ### With Claude Code
+
 1. Copy `.claude/commands/audit-anssi.md` into your project (`.claude/commands/`) or into `~/.claude/commands/`.
 2. Run `/audit-anssi <repo-path-or-name>`.
 3. Review the output, fill in the tracking table.
 
 ### With any LLM / by hand
+
 Provide `prompts/audit-agent.md` (replacing the `{{PRODUIT}}` / `{{CHEMIN}}` placeholders), relying on
 `referentiel/anssi-pg078-grille.md` and `prompts/hints-par-stack.md`.
 

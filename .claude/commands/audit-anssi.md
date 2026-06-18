@@ -13,6 +13,7 @@ Référentiel détaillé (intitulés, catégories, « quoi chercher », repères
 **`referentiel/anssi-pg078-grille.md`** de ce kit. Indices par techno : **`prompts/hints-par-stack.md`**.
 
 ## Démarche
+
 1. **Identifier la stack** (manifestes : `package.json`, `pom.xml`, `build.gradle`, `requirements.txt`,
    `*.csproj`, `composer.json`, `go.mod`…) puis **localiser le code d'authentification** (login, hashage
    des MDP, sessions/JWT, reset, anti-bruteforce, politique de MDP, MFA, TLS/cookies, journalisation).
@@ -25,6 +26,7 @@ Référentiel détaillé (intitulés, catégories, « quoi chercher », repères
    (R1/R2), et signale tout **secret/clé committé en clair**.
 
 ## Sortie attendue (un rapport Markdown)
+
 1. **Architecture d'authentification** (6-12 lignes : framework, hashage réel + paramètres, MFA,
    session/JWT, anti-bruteforce, politique de MDP, reset, TLS, IdP éventuel).
 2. **Tableau de conformité** : une ligne par recommandation `R# | statut | commentaire court (fichier:ligne)`.
