@@ -70,6 +70,19 @@ Provide `prompts/audit-agent.md` (replacing the `{{PRODUIT}}` / `{{CHEMIN}}` pla
 Rule for "do not …" recommendations (R8 no SMS, R22 no max length, R24 no forced expiry): the **absence**
 of the forbidden behavior = **conforme**.
 
+## Scoring (conformity indicator)
+
+A **0–100** score per product: `0` = all assessed recommendations fail, `100` = all pass. Scale:
+conforme = 100, partiel = 50, non conforme / en cours = 0; `N/A` and `à évaluer` are excluded. Full
+method (flat + weighted score, coverage, projected score, weighting):
+[`referentiel/scoring.md`](referentiel/scoring.md).
+
+Deterministic computation from the audit's verdicts JSON:
+
+```text
+python3 scripts/score.py verdicts.json
+```
+
 ## ANSSI sources
 
 - Official page: <https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe>

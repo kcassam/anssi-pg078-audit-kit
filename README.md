@@ -69,6 +69,19 @@ s'appuyant sur `referentiel/anssi-pg078-grille.md` et `prompts/hints-par-stack.m
 Règle pour les recommandations « ne pas … » (R8 pas de SMS, R22 pas de longueur max, R24 pas
 d'expiration forcée) : l'**absence** du comportement interdit = **conforme**.
 
+## Scoring (indicateur de conformité)
+
+Un score **0–100** par produit : `0` = toutes les recos évaluées KO, `100` = toutes OK. Barème :
+conforme = 100, partiel = 50, non conforme / en cours = 0 ; `N/A` et `à évaluer` exclus du calcul.
+Méthode complète (score plat + pondéré, couverture, score projeté, pondération) :
+[`referentiel/scoring.md`](referentiel/scoring.md).
+
+Calcul déterministe à partir du JSON de verdicts produit par l'audit :
+
+```text
+python3 scripts/score.py verdicts.json
+```
+
 ## Sources ANSSI
 
 - Page officielle : <https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe>
